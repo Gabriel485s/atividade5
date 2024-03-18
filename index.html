@@ -1,57 +1,88 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Lista de Compras - SUPER10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .promocao {
+            color: red;
+        }
+    </style>
 </head>
-<body bgcolor="#1E90FF">
-
+<body>
     <h1>Lista de Compras - SUPER10</h1>
     <h2><font color = "#FF0000">Pague</font><font color = "#FFFF00">Menos!!</font></h2>
-
-    <table bgcolor ="#FFFFFF">
-        <tr>
-            <th>Descrição</th>
-            <th>Preço</th>
-            <th>Marca</th>
-            <th>Promoção</th>
-            <th>Quantidade por Caixa</th>
-        </tr>
-        <tr>
-            <td>Arroz Integral</td>
-            <td>R$ 5,99</td>
-            <td>NutriVida</td>
-            <td>Não</td>
-            <td>10 unidades</td>
-        </tr>
-        <tr>
-            <td>Leite Desnatado</td>
-            <td>R$ 3,49</td>
-            <td>Leite Vita+</td>
-            <td>Sim (10% de desconto)</td>
-            <td>6 unidades</td>
-        </tr>
-        <tr>
-            <td>Maçãs Fuji</td>
-            <td>R$ 4,99/kg</td>
-            <td>Frutas Delícia</td>
-            <td>Não</td>
-            <td>2 kg</td>
-        </tr>
-        <tr>
-            <td>Sabonete Líquido</td>
-            <td>R$ 8,75</td>
-            <td>Beleza Pura</td>
-            <td>Sim (Leve 2, Pague 1)</td>
-            <td>3 unidades</td>
-        </tr>
-        <tr>
-            <td>Filé de Frango Congelado</td>
-            <td>R$ 12,99/kg</td>
-            <td>Sabor Natural</td>
-            <td>Não</td>
-            <td>1,5 kg</td>
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th>Descrição do Produto</th>
+                <th>Preço</th>
+                <th>Marca</th>
+                <th>Promoção</th>
+                <th>Quantidade por Caixa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arroz Integral 1kg</td>
+                <td>R$ 5,99</td>
+                <td>NutriVida</td>
+                <td>Não</td>
+                <td>10 unidades</td>
+            </tr>
+            <tr>
+                <td>Leite Desnatado 1L</td>
+                <td>R$ 3,49</td>
+                <td>Leite Vita+</td>
+                <td class="promocao">Sim (10% de desconto)</td>
+                <td>12 unidades</td>
+            </tr>
+            <tr>
+                <td>Maçãs Fuji</td>
+                <td>R$ 4,99/kg</td>
+                <td>Frutas Delícia</td>
+                <td>Não</td>
+                <td>2 kg</td>
+            </tr>
+            <tr>
+                <td>Sabonete Líquido 250ml</td>
+                <td>R$ 8,75</td>
+                <td>Beleza Pura</td>
+                <td class="promocao">Sim (Leve 2, Pague 1)</td>
+                <td>3 unidades</td>
+            </tr>
+            <tr>
+                <td>Filé de Frango Congelado</td>
+                <td>R$ 12,99/kg</td>
+                <td>Sabor Natural</td>
+                <td>Não</td>
+                <td>1,5 kg</td>
+            </tr>
+        </tbody>
     </table>
-
 </body>
 </html>
